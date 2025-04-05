@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-bg-main: #f7dec9;
+    --color-primary: #f86c2f;
+    --color-accent: #ffb7b8;
+    --color-dark: #045b46;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased text-foreground;
+    background-color: var(--color-bg-main);
+  }
+  
+  h1 {
+    @apply font-bold text-3xl md:text-4xl;
+    color: var(--color-dark);
+  }
+
+  h2 {
+    @apply font-bold text-2xl md:text-3xl;
+    color: var(--color-dark);
+  }
+
+  h3, h4, h5, h6 {
+    @apply font-semibold;
+    color: var(--color-dark);
+  }
+  
+  p {
+    @apply text-[#045b46]/90 leading-relaxed;
+  }
+
+  a {
+    @apply text-[#045b46] hover:text-[#ffb7b8] transition-colors duration-300;
+  }
+  
+  /* Brand-specific styles */
+  .brand-gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#045b46] via-[#f86c2f] to-[#ffb7b8] font-bold;
+  }
+  
+  .brand-heading {
+    @apply text-[#045b46] hover:text-[#ffb7b8] transition-colors duration-300 font-bold;
+  }
+
+  .brand-subtitle {
+    @apply text-[#045b46]/75 font-medium;
+  }
+  
+  .brand-gradient-bg {
+    @apply bg-gradient-to-r from-primary to-[#ffb7b8] text-white;
+  }
+  
+  .brand-card {
+    @apply bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden border border-gray-100;
+  }
+  
+  .brand-button {
+    @apply bg-primary hover:opacity-90 text-white font-medium py-2 px-4 rounded-md transition-all duration-300;
+  }
+
+  .brand-accent-button {
+    background-color: var(--color-accent);
+    @apply hover:opacity-90 text-white font-medium py-2 px-4 rounded-md transition-all duration-300;
+  }
+
+  .brand-dark-button {
+    background-color: var(--color-dark);
+    @apply hover:opacity-90 text-white font-medium py-2 px-4 rounded-md transition-all duration-300;
+  }
+  
+  .brand-check-icon {
+    color: var(--color-dark);
+  }
+}

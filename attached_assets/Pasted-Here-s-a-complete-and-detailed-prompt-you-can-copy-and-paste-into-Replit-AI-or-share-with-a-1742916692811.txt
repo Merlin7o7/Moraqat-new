@@ -1,0 +1,61 @@
+Here’s a complete and detailed **prompt** you can copy and paste into **Replit AI** (or share with a developer) to begin building your **Moraqqat website and app** efficiently:
+
+---
+
+🟦 **Prompt for Replit AI to Build Moraqqat Website & App (Full Stack)**
+
+> Build a modern, responsive, full-stack website and mobile app for a pet food subscription service called **Moraqqat**.  
+>
+> The project must include both **user-facing frontend** and **admin/backend systems**, with **user authentication**, **profile creation**, and **customized subscription flow** for cats.  
+>
+> ### 📱 Platform Overview:
+> Moraqqat allows users to subscribe to monthly personalized pet food boxes. The user will first sign up, then create a profile for their pet (with details like name, breed, weight, age, dietary preferences, food type). Based on the answers, the system will recommend a subscription plan.
+>
+> ### 🧩 Key Features:
+> #### Frontend (React / React Native):
+> - Landing page with pricing tiers (Basic, Premium, VIP)
+> - User registration/login page (JWT-authenticated)
+> - Pet profile form (name, weight, age, dietary preferences)
+> - Subscription selection with live pricing
+> - User dashboard showing subscription status, deliveries, and profile updates
+> - Add-on selector (litter, toys, treats)
+> - WhatsApp support button
+>
+> #### Backend (Node.js + Express + MongoDB or Firebase):
+> - Secure user registration and login (JWT)
+> - Database for users, pets, subscriptions, orders
+> - Logic to calculate package cost based on pet profile and selected add-ons
+> - Admin dashboard to view users, prepare shipments, edit products
+>
+> #### Mobile App (React Native):
+> - Replicate all frontend features in mobile UI
+> - Push notifications for order updates
+> - Pet birthday reminder and reward system
+>
+> #### APIs:
+> - Payment gateway integration (Mada, Apple Pay, Stripe)
+> - SMS/Email confirmation
+> - WhatsApp Business API support (optional)
+>
+> ### 📦 Subscription Logic:
+> - Tiers: Basic (210 SAR), Premium (280 SAR), VIP (350 SAR)
+> - Add-ons: Litter, toys, treats (added cost, marked up 50-100%)
+> - Discounts on 6-month and 12-month subscriptions (auto-applied)
+> - System must calculate total price per user dynamically
+>
+> ### 🌍 Other Requirements:
+> - Arabic/English language toggle (i18n support)
+> - SEO-friendly for the web app
+> - Responsive mobile-first design
+> - Admin can edit prices and content via simple CMS panel
+>
+> Deliver this as a full-stack monorepo project. Use TailwindCSS or Bootstrap for frontend styling. Prioritize clean, maintainable code with comments. Assume initial deployment to Replit or Vercel.
+
+---
+
+✅ Let me know if you want:
+- A visual wireframe for Replit reference.
+- Backend logic flowchart.
+- App store descriptions for later.
+
+Ready to help with the next step!
